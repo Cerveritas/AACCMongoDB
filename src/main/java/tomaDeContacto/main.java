@@ -21,9 +21,9 @@ public class main {
         do {
 
             System.out.println("0 - Salir del programa");
-            System.out.println("1 - ");
-            System.out.println("2 - ");
-            System.out.println(" ");
+            System.out.println("1 - Insertar documentos en la base de datos");
+            System.out.println("2 - Visualizar Coleccion");
+            System.out.println("3 - Pasar los datos a un fichero ");
             System.out.println("INTRODUCE EL NUMERO: ");
 
             opcion = sc.nextInt();
@@ -37,7 +37,7 @@ public class main {
                     break;
 
                 case 1:
-                    // Voy a visualizar lo insertado
+                    // Voy a insertar documentos en la BBDD
                     insertarDocumentos();
                     break;
 
@@ -47,7 +47,7 @@ public class main {
                     break;
 
                 case 3:
-                    // Voy a psar los datos a un fichero
+                    // Voy a pasar los datos a un fichero
                     MongoDBToTextFile();
                     break;
 
